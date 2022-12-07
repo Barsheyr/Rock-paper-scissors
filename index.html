@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="/css/rps.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-banner">
+            <img src="images/logo.svg" alt="">
+            <div class="scores">
+                <h4> SCORE </h4>
+                <p id="score"> 0 </span>
+            </div>
+        </div>
+
+        <div class="choiceresult">
+            <h2>Computer Choice: <span id="computer-choice"></span> </h2>
+            <h2>Your Choice: <span id="user-choice"></span> </h2>
+        </div>
+
+        <p id="result" class="showresult"></p>
+    </header>
+
+
+    <section class="playground-container" id="playground-container">
+        <div class="choices" id="choice">
+            <div class="triangle-part">
+                <img src="images/bg-triangle.svg" alt="" class="triangle">
+            </div>
+            <div class="btn-circle" data-choice="rock">
+                <img src="images/icon-rock.svg" alt="" id="rock" class="choice rock">
+            </div>
+            <div class="btn-circle" data-choice="paper">
+                <img src="images/icon-paper.svg" alt="" id="paper" class="choice paper">
+            </div>
+            <div class="btn-circle" data-choice="scissors">
+                <img src="images/icon-scissors.svg" alt="" id="scissors" class="choice scissors">
+            </div>
+        </div>
+    </section>
+
+    <button type="button" id="btnRules" class="btn-rules"> RULES </button>
+
+    <div class="modal-overlay">
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3> RULES </h3>
+                <button class="close-btn">
+                    <img src="images/icon-close.svg" alt="">
+                </button>
+            </div>
+            <img src="images/image-rules.svg" alt="">
+        </div>
+    </div>
+
+
+    <section class="results container hide">
+        <div class="yourChoice"></div>
+        <div class="result hide"></div>
+        <div class="houseChoice"></div>
+    </section>
+
+
+    <script src="rps.js"></script>
+</body>
+
+</html>
